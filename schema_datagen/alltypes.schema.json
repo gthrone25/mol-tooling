@@ -1,0 +1,60 @@
+{    
+  "name": "alltypesink",    
+  "sink_details": {
+    "deployment_id": "{{deployment_id}}",
+    "table": "alltypes"
+  },
+  "schema": {
+      "type": "json",
+      "id_field": "id",
+      "allow_missing_fields": false,
+      "definition": [
+      {
+          "name": "id",
+          "path": ["id"],
+          "type": "id",
+          "config": {
+            "Mutex": false
+          }
+      },
+      {
+          "name": "decimal",
+          "path": ["decimal"],
+          "type": "decimal",
+          "config": {
+            "Scale": 2
+          }
+      },
+      {
+          "name": "int",
+          "path": ["int"],
+          "type": "int"
+      },
+      {
+          "name": "string",
+          "path": ["string"],
+          "type": "string",
+          "config": {
+            "Mutex": true
+          }
+      },
+      {
+        "name": "strings",
+        "path": ["strings"],
+        "type": "strings"
+    },
+      {
+          "name": "timestamp",
+          "path": ["timestamp"],
+          "type": "timestamp",
+          "config": {
+            "Granularity": "s"
+          }
+      },
+      {
+          "name": "bool",
+          "path": ["bool"],
+          "type": "bool"
+      }]
+  }
+}
