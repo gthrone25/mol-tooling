@@ -3,4 +3,4 @@ You must have a sink running with the same schema as found in this repo to use t
 
 Usage:
 
-` python schema_to_record.py --user greg.throne@molecula.com --schema alltypes.schema.json --values alltypes.valuegen.json --source <sink id> `
+` python schema_to_record.py --user <saas user name> --schema alltypes.schema.json --values alltypes.valuegen.json --source <sink id> `
