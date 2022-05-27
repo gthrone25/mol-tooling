@@ -21,3 +21,6 @@ batchsize = 1000
 Leave as zero. This increments up to the record count
 current_cnt = 0
 
+## To Do
+* Could drop the schema file and have it read in by the sink. Some nice optimization
+* Create flexibility for the timestamp granularity
